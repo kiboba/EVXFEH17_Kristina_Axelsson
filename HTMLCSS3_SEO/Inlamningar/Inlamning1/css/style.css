@@ -1,0 +1,91 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+body {
+    background-color: #e9967a;
+}
+
+.meny {
+    background-color: #333;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.meny a:hover {
+    background-color: #555;
+}
+
+.meny li {
+    display: inline;
+    font-size: 20px;
+}
+
+.logo h3 {
+    color: greenyellow;
+}
+
+.syndicate {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 0.5em;
+    text-align: left;
+    border-bottom: 2px solid;
+    padding: 0.5em;
+    background-color: whitesmoke;
+}
+
+.syndicate h3 {
+    text-align: center;
+    padding: 0.5em;
+    color: yellowgreen;
+}
+
+.date {
+    text-align: left;
+}
+
+.blog_summary {
+    text-align: center;
+    margin: 0.5em;
+    padding: 0.5em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.blog_summary a:hover {
+    color:red;
+}
+.blog_summary span {
+    color: yellow;
+}
+.next {
+    text-align: left;
+    margin-left: 5%;
+}
+
+.contact {
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+/*
+.contact .web {
+    color: white;
+}
+Behöver jag skriva som en parent?
+*/
+.web {
+    color: white;
+}

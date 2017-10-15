@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+body {
+    box-sizing: border-box;
+    color: white;
+    background: olivedrab;
+}
+
+figure {
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    display: block;
+    /* flex-flow: row wrap; */
+    /* flex-direction: row; */
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.fa fa-heartbeat {
+    align-items: flex-start;
+}
+
+.menu li {
+    /* display: block; */
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    position: relative;
+    background: black;
+    color: white;
+    padding: 5px;
+    font-size: 25px;
+    margin: 0;
+}
+
+.menu li:hover {
+    background: blue;
+}
+
+.menu li:nth-child(1) {
+    background: orangered;
+}
+
+.menu li:nth-child(2):hover {
+    background: yellow;
+}
+
+.menu li:nth-child(3):hover {
+    background: blueviolet;
+}
+
+.menu li:nth-child(4):hover {
+    background: white;
+    color: black;
+}
+
+.menu ul ul {
+    display: none;
+}
+
+.menu li:hover ul {
+    display: block;
+    position: absolute;
+    margin-top: 0;
+    margin-left: -5px;
+}
+
+.menu li li {
+    font-size: 20px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.image {
+    grid-area: image;
+}
+
+.mad {
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+
+.madonna {
+    grid-area: madonna;
+}
+
+.marilyn {
+    grid-area: marilyn;
+}
+
+.mar {
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.audrey {
+    grid-area: audrey;
+}
+
+.a {
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.whitney {
+    grid-area: whitney;
+}
+
+.w {
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.bob {
+    grid-area: bob;
+}
+
+.b {
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+
+.elvis {
+    grid-area: elvis;
+}
+
+.e {
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.michael {
+    grid-area: michael;
+}
+
+.mi {
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+}
+
+.caption {
+    display: grid;
+    grid-area: name;
+}
+
+.cards {
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "madonna" "marilyn" "audrey" "bob" "whitney" "elvis" "michael";
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    /* grid-template-areas: "name" "name" "name" "name" "name" "name" "name"; */
+}
+
+@media screen and (min-width: 27em) {
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "madonna bob"
+        "marilyn audrey"
+        "elvis whitney"
+        "michael .";
+    }
+
+    .menu li {
+        display: inline;
+    }
+
+
+
+    .menu li:hover ul {
+        margin: 0;
+        margin-top: 5px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "name name" "name name" "name name" "name .";
+    }
+
+}
+
+@media screen and (min-width: 60em) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "madonna bob marilyn marilyn"
+        "whitney whitney marilyn marilyn"
+        "whitney whitney audrey audrey"
+        "elvis elvis audrey audrey"
+        "elvis elvis michael michael";
+    }
+}
