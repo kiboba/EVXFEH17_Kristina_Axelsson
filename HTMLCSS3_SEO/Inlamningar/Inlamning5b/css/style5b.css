@@ -30,8 +30,18 @@ figure {
     margin-bottom: 5px;
 }
 
-.fa fa-heartbeat {
-    align-items: flex-start;
+.title {
+    display: flex;
+    justify-content: space-around;
+}
+
+.h1 {
+
+}
+
+.fa {
+
+    color: red;
 }
 
 .menu li {
@@ -46,13 +56,15 @@ figure {
     margin: 0;
 }
 
+.menu ul {
+    background: black;
+}
+
 .menu li:hover {
     background: blue;
 }
 
-.menu li:nth-child(1) {
-    background: orangered;
-}
+
 
 .menu li:nth-child(2):hover {
     background: yellow;
@@ -107,6 +119,7 @@ img {
 .mar {
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
+    
 }
 
 .audrey {

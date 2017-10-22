@@ -1,0 +1,25 @@
+.grid_container {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+    margin-top: 2em;
+
+}
+
+@include respond-to("small"){
+.grid_container {
+    grid-gap: 2em;
+    grid-template-columns:repeat(2, 1fr);
+}
+
+}
+
+
+@include respond-to("large"){
+    
+    .grid_container {
+        grid-gap: 2em;
+        grid-template-columns:repeat(3, 1fr);
+    }
+
+}
