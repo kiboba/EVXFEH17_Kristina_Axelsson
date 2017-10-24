@@ -17,9 +17,11 @@
 //@import 'layout/layout_index';
 
 
+
 //*
 
 
-body {
-    color: blue;
-}
+.testing {
+    width: percentage(5/7);
+    background: red;
+  }

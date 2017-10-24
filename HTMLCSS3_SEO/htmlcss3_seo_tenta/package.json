@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kiboba/EVXFEH17_Kristina_Axelsson.git"
+    "url": "git+https://github.com/mig-25/evxfeh17_html_tenta.git"
   },
   "keywords": [
     "tenta",
@@ -18,9 +18,9 @@
   "author": "Sohail Hasware <saab.viggen@live.se>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kiboba/EVXFEH17_Kristina_Axelsson.git"
+    "url": "https://github.com/mig-25/evxfeh17_html_tenta/issues"
   },
-  "homepage": "https://github.com/kiboba/EVXFEH17_Kristina_Axelsson.git",
+  "homepage": "https://github.com/mig-25/evxfeh17_html_tenta#readme",
   "dependencies": {
     "browser-sync": "2.18.13",
     "del": "3.0.0",
