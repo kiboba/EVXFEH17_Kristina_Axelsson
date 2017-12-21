@@ -177,8 +177,7 @@ th {
 h1, h2 {
   display: flex;
   justify-content: center;
-  padding: 2rem 0 0 0;
-  background: blue; }
+  padding: 2rem 0 0 0; }
 
 h1 {
   font-size: 4rem;
