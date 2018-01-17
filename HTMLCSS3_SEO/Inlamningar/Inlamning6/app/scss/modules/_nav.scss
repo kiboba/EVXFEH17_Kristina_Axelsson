@@ -1,0 +1,67 @@
+.triggs {
+      display: none;
+      position: absolute;
+}
+
+/* fäll ut hela menyn om checkboxen är iklickad */
+.mainNav input.triggs:checked ~ ul, .mainNav input.triggs:checked ~ ul li ul {
+      display: block !important;
+}
+
+label {
+      position: relative;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      font-size: 200%;
+      padding: 10px;
+}
+
+.mainNav ul {
+      display: none;
+      text-align: center;
+      padding-left: 0;
+      background: $colorPink;
+// using varibles
+}
+
+.mainNav li {
+      background: black;
+      margin-left: 0;
+      margin: 0;
+}
+
+.mainNav li li:hover {
+      background: $colorBlue;
+}
+
+
+@media screen and (min-width: 60em) {
+      label {
+            display: none;
+      }
+      .mainNav > ul {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            font-size: 200%;
+      }
+      .mainNav li {
+            padding: 5px;
+      }
+      .mainNav ul ul {
+            font-size: 100%;
+      }
+      .megaMenu {
+            position: absolute;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-gap: 5px;
+            left: 0;
+            margin-top: 5px;
+      }
+      .mainNav li:hover ul {
+            display: block;
+            border: 1px solid white;
+      }
+}
