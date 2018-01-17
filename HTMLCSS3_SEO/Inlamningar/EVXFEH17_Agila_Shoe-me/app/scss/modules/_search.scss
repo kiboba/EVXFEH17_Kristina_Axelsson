@@ -1,0 +1,110 @@
+.searchContainer {
+      display: block;
+      display: grid;
+      justify-content: center;
+}
+
+.title {
+      font-size: 200%;
+      display: flex;
+      justify-content: center;
+}
+
+.searchBar {
+      background: honeydew;
+      border: 1px solid white;
+      padding: 5%;
+      width: 100%;
+      display: grid;
+      justify-content: center;
+      background: black;
+      color: white;
+      border-radius: 5px;
+      a {
+            @extend %link;
+            // using extend
+            border-radius: 0px 0px 5px 5px;
+            &:hover {
+                  background: $colorRed;
+                  // using a varible
+            }
+            .fa {
+                  display: flex;
+                  justify-content: center;
+                  color: black;
+            }
+      }
+}
+
+input[type=text] {
+      color: black;
+}
+
+.searchColor {
+      display: grid;
+      justify-content: center;
+      background: black;
+      color: white;
+      border-radius: 5px;
+      border-bottom: 1px solid white;
+      border-left: 1px solid white;
+      padding: 5%;
+      a {
+            @extend %link;
+            &:hover {
+                  background: white;
+            }
+      }
+}
+
+.btn-group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      a {
+            @extend %link;
+      }
+
+}      
+
+.searchBrandColor {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      border: 6px solid black;
+      border-radius: 5px;
+      padding: 10px;
+      h3 {
+            grid-column: span 2;
+      }
+      .brand {
+            display: grid;
+            justify-content: center;
+      }
+      a:hover {
+            background: white;
+      }
+}
+
+.searchBrandColor .brand:first-of-type, .brand:last-of-type {
+      background: black;
+      color: white;
+      border-radius: 5px;
+}
+// uses extend to make all links look the same
+// .btn-group a {
+//       @extend %link;
+// }
+
+@include respond-to("medium") { 
+      .searchContainer{ 
+            grid-template-columns: repeat(3, 1fr);
+            .title {
+                  grid-column: span 2;
+            }
+            .searchBrandColor {
+                  grid-column: 3 / 4;
+                  grid-row: 1 / 3;
+            }
+      }
+}
