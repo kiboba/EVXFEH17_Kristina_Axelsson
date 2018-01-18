@@ -1,0 +1,19 @@
+.imageContainer {
+      background: black;
+}
+
+@include respond-to("medium") {
+      .imageContainer {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+      }
+}
+
+@include respond-to("large") {
+      .imageContainer {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 10px;
+      }
+}
